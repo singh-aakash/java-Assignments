@@ -2,24 +2,15 @@ import java.util.Scanner;
 
 public class Armstrong {
 
-	public static void main(String[] args) 
+	public static int armstrongfunction(int number)
 	{
-		// TODO Auto-generated method stub
-		Scanner sc= new Scanner(System.in);
-		System.out.println("enter the number");
-		int n = sc.nextInt(), count=0, r=0, o=0;
-		o = n;
-		while(n > 0)
+		int sum = 0;
+		while(number > 0)
 		{
-			r = n % 10;
-			count += Math.pow(r,3);
-			n = n/10;
+			int remainder = number % 10;
+			sum += Math.pow(remainder,3);
+			number = number/10;
 		}
-		System.out.println(o);
-		if(o == count)
-		System.out.println(" is an Armstrong number ");
-		else
-		System.out.println(" is not an Armstrong number");
+		return sum;
 	}
-
 }
