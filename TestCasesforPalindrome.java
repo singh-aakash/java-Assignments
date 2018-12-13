@@ -11,9 +11,9 @@ public class TestCasesforPalindrome {
 	public void test() {
 		MultiplePalindrome multiplePalindrome = new MultiplePalindrome();
 		String[] inputnames = {"MAM", "NITIN", "INIT", "RAW", "AKASH", "SAS", "FOX", "TET", "MEET","JICKY"};
-		String[] reults = {"MAM","NITIN","SAS","TET"};
+		String[] reSults = {"TET","SAS","NITIN","MAM"};
 		ArrayList<String> actual_String_Array = multiplePalindrome.palindromefinder(inputnames);
-		assert(true);
+		assertEquals(reSults, actual_String_Array);
 	}
 
 }
