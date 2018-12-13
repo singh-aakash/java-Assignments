@@ -16,7 +16,6 @@ public class Square {
 	}
 
 	private static int squar(int count) {
-		// TODO Auto-generated method stub
 		int s = count * count;
 		return s;
 	}

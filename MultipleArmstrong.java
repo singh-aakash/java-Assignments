@@ -14,7 +14,6 @@ public class MultipleArmstrong {
 		return count;
 	}
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		int count =0;
 		for(int i = 100;i <= 999;i++)
 		{
