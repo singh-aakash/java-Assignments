@@ -58,5 +58,7 @@ public class Telivision {
 				return 0;
 			}
 	}
-
+	public boolean finalTvState(){
+		return false;
+	}
 }

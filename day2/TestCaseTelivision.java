@@ -13,7 +13,7 @@ public class TestCaseTelivision {
 		telivision.setTurn(true);
 	}
 	@Test
-	public void testState() {
+	public void testState1() {
 		boolean state = telivision.tvstate();
 		assertTrue(state);
 		
@@ -27,6 +27,12 @@ public class TestCaseTelivision {
 	public void testChannel(){
 		int tvVolumeNo = telivision.tvVolume();
 		assertEquals(1, tvVolumeNo);
+	}
+	@Test
+	public void testState2() {
+		boolean state = telivision.finalTvState();
+		assertFalse(state);
+		
 	}
 
 }
