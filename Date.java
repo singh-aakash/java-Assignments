@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class Date {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);// taking input from the user
 		int dat = 0, month = 0, year = 0;
 		System.out.println("enter date");
 		dat = sc.nextInt();
@@ -12,7 +12,7 @@ public class Date {
 		year = sc.nextInt();
 		System.out.println("input is " + dat +","+ month +","+ year);
 		int x = month;
-		switch(x)
+		switch(x)// using switch cases for calculator
 		{
 			case 1: 
 				System.out.println("output is " + dat +"/" + "January" + "/"+ year);

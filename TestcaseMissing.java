@@ -12,4 +12,20 @@ public class TestcaseMissing {
 		assertEquals(8, result);
 	}
 
+	@Test
+	public void test2() {
+		MissingNumbers missingNumbers = new MissingNumbers();
+		int[] numberArray = {};
+		int result = missingNumbers.MissingFunction(numberArray);
+		assertEquals(0, result);
+	}
+
+	@Test
+	public void test3() {
+		MissingNumbers missingNumbers = new MissingNumbers();
+		int[] numberArray = {1};
+		int result = missingNumbers.MissingFunction(numberArray);
+		assertEquals(2, result);
+	}
+
 }

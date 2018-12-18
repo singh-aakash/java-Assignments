@@ -4,14 +4,14 @@ import java.util.Scanner;
 public class SequentialSort {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);
 		System.out.println("enter the size of array");
-		int n = sc.nextInt(), temp = 0;;
+		int n = scanner.nextInt(), temp = 0;;
 		int[] arr = new int[n]; 
 		System.out.println("enter array");
 		for(int i = 0; i < n; i++)
 		{
-			arr[i] = sc.nextInt();
+			arr[i] = scanner.nextInt();
 		}
 		for(int i=0;i<n;i++)
 		{

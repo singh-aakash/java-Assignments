@@ -1,8 +1,11 @@
 import java.util.Scanner;
 
+
 public class IncomeTax {
 	
+
 	static float fun(float s) {
+		// TODO Auto-generated method stub
 		float res = 0;
 		if(s > 0 && s <= 180000)
 		{
@@ -39,4 +42,6 @@ public class IncomeTax {
 		gross = fun(s);
 		System.out.println("Gross Salary is   " + gross);
 	}
+
+
 }

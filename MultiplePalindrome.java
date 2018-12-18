@@ -4,9 +4,10 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-
+//class
 public class MultiplePalindrome {
 	
+	//palindrom finder function
 	static String palindromes(String values_of_Array)
 	{
 		String reverse = values_of_Array;
@@ -19,7 +20,7 @@ public class MultiplePalindrome {
 		return values_of_Array;
 		
 	}
-
+// main function
 	static ArrayList<String> palindromefinder(String[] inputnames) {
 		ArrayList<String> allPalindromeStrings = new ArrayList<>();
 		int length_of_Array = inputnames.length, counter = 0, counter1 = 0, actual_Counter = 0;
@@ -39,7 +40,6 @@ public class MultiplePalindrome {
 		{
 			for(counter1 = counter; counter1 < modifiedString.length; counter1++)
 			{ 
-				//nn
 				if(modifiedString[counter].compareTo(modifiedString[counter1]) < 0)
 				{
 					String temporary = modifiedString[counter];
@@ -47,10 +47,6 @@ public class MultiplePalindrome {
 					modifiedString[counter1] = temporary;
 				}
 			}
-		}
-		for(counter = 0; counter < modifiedString.length; counter++)
-		{
-			System.out.println(modifiedString[counter]);
 		}
 		return allPalindromeStrings;
 	}

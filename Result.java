@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class Result {
 
 	public static void main(String[] args) {
+		// TODO Auto-generated method stub
 		Scanner sc= new Scanner(System.in);
 		int x, y, z;
 		System.out.println("enter first subject Marks");

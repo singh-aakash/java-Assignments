@@ -23,10 +23,10 @@ public class StringFinder {
 				}
 			}
 			else
-				return 0;
+				return counter3;
 		}
 	
-		return 0;
+		return counter3;
 		
 	}
 

@@ -17,4 +17,10 @@ public class ReverseStringTestCase {
 		String result = reverstring.reverseString("NITIN IS BOY");
 		assertEquals("YOB NITIN", result);
 	}
+	@Test
+	public void test3() {
+		ReverseString reverstring = new ReverseString();
+		String result = reverstring.reverseString("NITIN");
+		assertEquals("NITIN", result);
+	}
 }
