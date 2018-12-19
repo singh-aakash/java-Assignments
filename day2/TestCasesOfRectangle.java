@@ -6,35 +6,38 @@ import org.junit.Test;
 
 public class TestCasesOfRectangle {
 
-	RectangleCalculate rectangleCalculate = new RectangleCalculate();
+	RectangleCalculate rectangleCalculate1 = new RectangleCalculate();
+	RectangleCalculate rectangleCalculate2 = new RectangleCalculate();
+	RectangleCalculate rectangleCalculate3 = new RectangleCalculate();
+	
 	@Before
 	public void setup(){
-		rectangleCalculate.setbreadth1(20);
-		rectangleCalculate.setlength1(30);
-		rectangleCalculate.setLength2(30);
-		rectangleCalculate.setBreadth2(20);
+		rectangleCalculate1.setbreadth(20);
+		rectangleCalculate1.setlength(30);
+		rectangleCalculate2.setlength(30);
+		rectangleCalculate2.setbreadth(20);
 	}
 	@Test
 	public void testArea() {
 		
-		float area = rectangleCalculate.areaOfRectangle1();
+		float area = rectangleCalculate1.areaOfRectangle();
 		assertEquals(600, area,0);
 	}
 
 	@Test
 	public void testPerimeter() {
-		float area = rectangleCalculate.perimeterOfRectangle1();
+		float area = rectangleCalculate1.perimeterOfRectangle();
 		assertEquals(100, area,0);
 	}
 	
 	@Test
 	public void testCompareArea(){
-		boolean result = rectangleCalculate.compareAreaOfRectangle();
+		boolean result = rectangleCalculate3.compareAreaOfRectangle(rectangleCalculate1, rectangleCalculate2);
 		assertTrue(result);
 	}
 	@Test
 	public void testComparePerimeter(){
-		boolean result = rectangleCalculate.comparePerimeterOfRectangle();
+		boolean result = rectangleCalculate3.comparePerimeterOfRectangle(rectangleCalculate1, rectangleCalculate2);
 		assertTrue(result);
 	}
 }

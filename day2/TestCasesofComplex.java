@@ -6,29 +6,28 @@ import org.junit.Test;
 
 public class TestCasesofComplex {
 
-	Complex complex = new Complex();
-	@Before
+	Complex complex1 = new Complex();
+	Complex complex2 = new Complex();
+	Complex complex3 = new Complex();
 	
+	@Before
 	public void setup(){
-		complex.setImaginaryNumber(2.5f, 3.3f);
-		complex.setRealnumber(6.5f, 9.8f);
+		complex1.setComplexNumber(2.5, 5.6);
+		complex2.setComplexNumber(6.6, 9.8);
 	}
 	@Test
-	public void testCasesImaginaryNumber() {
-		float result = complex.sumImaginaryNumber();
-		System.out.println(result);
-		assertEquals(5.8f, result,0.0);
+	public void testCasesShowComplexNumber1() {
+		
+		assertEquals("2.5 + 5.6i", complex1.showComplexNumber());
 	}
 	@Test
-	public void testCasesRealNumber()
+	public void testCasesShowComplexNumber2() {
+		
+		assertEquals("6.6 + 9.8i", complex2.showComplexNumber());
+	}
+	@Test
+	public void testCasesSumComplexNumber()
 	{
-		float result = complex.sumRealNumber();
-		System.out.println(result);
-		assertEquals(16.3f, result,0.0);
-	}
-	@Test
-	public void testCasesDistance(){
-		float result = complex.sumImaginaryNumber();
-		assertEquals(52.0, result,0.0);
+		assertEquals("5.0 + 19.6i", complex3.sumComplexNumber(complex1, complex2));
 	}
 }

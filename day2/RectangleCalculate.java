@@ -9,62 +9,40 @@ Test the Program with different combinations test cases possible.
 
  */
 public class RectangleCalculate {
-	public int length1;
-	public int breadth1;
-	public int length2;
-	public int breadth2; 
-	public int getLength2() {
-		return length2;
+	public int length;
+	public int breadth;
+	public int getlength() {
+		return length;
 	}
-	public void setLength2(int length2) {
-		this.length2 = length2;
+	public void setlength(int length) {
+		this.length = length;
 	}
-	public int getBreadth2() {
-		return breadth2;
+	public int getbreadth() {
+		return breadth;
 	}
-	public void setBreadth2(int breadth2) {
-		this.breadth2 = breadth2;
+	public void setbreadth(int breadth) {
+		this.breadth = breadth;
 	}
-	public int getlength1() {
-		return length1;
-	}
-	public void setlength1(int length1) {
-		this.length1 = length1;
-	}
-	public int getbreadth1() {
-		return breadth1;
-	}
-	public void setbreadth1(int breadth1) {
-		this.breadth1 = breadth1;
-	}
-	public float areaOfRectangle1(){
-		return length1 * breadth1;
-		
-	}
-	public float areaOfRectangle2(){
-		return length2 * breadth2;
+	public float areaOfRectangle(){
+		return length * breadth;
 		
 	}
 
-	public float perimeterOfRectangle1(){
-		return 2 * ( length1 + breadth1);
+	public float perimeterOfRectangle(){
+		return 2 * ( length + breadth);
 		
 	}
 
-	public float perimeterOfRectangle2(){
-		return 2 * ( length2 + breadth2);
-		
-	}
 	
-	public boolean compareAreaOfRectangle(){
-		if(areaOfRectangle1() == areaOfRectangle2())
+	public boolean compareAreaOfRectangle(RectangleCalculate rectangleCalculate1, RectangleCalculate rectangleCalculate2){
+		if(rectangleCalculate1.areaOfRectangle() == rectangleCalculate2.areaOfRectangle())
 			return true;
 		else
 			return false;
 		
 	}
-	public boolean comparePerimeterOfRectangle(){
-		if(perimeterOfRectangle1() == perimeterOfRectangle2())
+	public boolean comparePerimeterOfRectangle(RectangleCalculate rectangleCalculate1, RectangleCalculate rectangleCalculate2){
+		if(rectangleCalculate1.perimeterOfRectangle() == rectangleCalculate2.perimeterOfRectangle())
 			return true;
 		else
 			return false;
